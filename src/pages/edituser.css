@@ -1,0 +1,103 @@
+.edit-body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.edit-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/login_bg.jpg) no-repeat center center/cover;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.edit-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user-avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #af40ff;
+}
+
+.edit-container input {
+  width: 20rem;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.edit-container button {
+  width: 22rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.edit-container button:first-of-type {
+  background-color: #af40ff;
+  color: white;
+}
+
+.edit-container button:first-of-type:hover {
+  background-color: #834986;
+}
+
+.cancel-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-container input {
+    width: 18rem;
+  }
+
+  .edit-container button {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-container input {
+    width: 16rem;
+  }
+
+  .edit-container button {
+    width: 18rem;
+  }
+}
