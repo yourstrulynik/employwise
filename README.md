@@ -31,8 +31,8 @@ This project is a React application that integrates with the Reqres API to perfo
 ## Tech Stack  
 - **Frontend:** React.js, React Router  
 - **State Management:** useState, useEffect  
-- **API Handling:** Fetch API  
-- **UI Components:** CSS, Bootstrap (optional for styling)  
+- **API Handling:** Axios 
+- **UI Components:** CSS 
 
 ## Installation  
 1. Clone the repository using Git.  
